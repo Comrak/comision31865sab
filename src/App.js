@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import logo from './pizzalogot.png';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>La Vera Pizza</h1>
+        <h1>VERITAS PIZZERIA</h1>
+        <p>La Vera Pizza</p>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          muy pronto podras ordenar la verdadera pizza italiana por aca 
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
