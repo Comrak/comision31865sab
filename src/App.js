@@ -1,17 +1,13 @@
-import logo from './pizzalogot.png';
+
 import './App.css';
+import HomeContent from './components/HomeContent';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>VERITAS PIZZERIA</h1>
-        <p>La Vera Pizza</p>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          muy pronto podras ordenar la verdadera pizza italiana por aca 
-        </p>
-      </header>
+    <div>
+      <NavBar/>
+      <HomeContent/>
     </div>
   );
 }
