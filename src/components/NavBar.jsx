@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import "../navbar.css";
 
-function Navbar() {
+const Navbar=()=> {
   const [active, setActive] = useState("nav__menu");
   const [icon, setIcon] = useState("nav__toggler");
   const navToggle = () => {
@@ -17,7 +16,7 @@ function Navbar() {
   return (
     <nav className="nav">
       <a href="#" className="nav__brand">
-        <img src="../pizzalogot.png" alt="Veritas Pizzeria" style={{height:'30px'}}/> Veritas Pizzeria
+        <img src='assets/pizzalogot.png' alt="Veritas Pizzeria" style={{height:'30px'}}/>Veritas Pizzeria
       </a>
       <ul className={active}>
         <li className="nav__item">

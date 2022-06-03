@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import "../HomeCont.css";
 export default class HomeContent extends Component {
   render() {
     return (
