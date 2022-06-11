@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Link} from 'react-router-dom'
 
 const Navbar=()=> {
   const [active, setActive] = useState("nav__menu");
@@ -15,25 +16,33 @@ const Navbar=()=> {
   };
   return (
     <nav className="nav">
-      <a href="#" className="nav__brand">
-        <img src='assets/pizzalogot.png' alt="Veritas Pizzeria" style={{height:'30px'}}/>Veritas Pizzeria
-      </a>
+      <Link to='/'>
+        <a href="#" className="nav__brand">
+          <img src='assets/pizzalogot.png' alt="Veritas Pizzeria" style={{height:'30px'}}/>Veritas Pizzeria
+        </a>
+      </Link>
       <ul className={active}>
+      <Link to='/contacst'>
         <li className="nav__item">
           <a href="#" className="nav__link">
             Contactanos
           </a>
         </li>
+      </Link>
+      <Link to='/pizzaBuilder'>
         <li className="nav__item">
           <a href="#" className="nav__link">
             Arma tu pizza
           </a>
         </li>
+      </Link>
+      <Link to='/especialidades'>
         <li className="nav__item">
           <a href="#" className="nav__link">
-            Menu
+            especialidades
           </a>
         </li>
+      </Link>
       </ul>
       <div onClick={navToggle} className={icon}>
         <div className="line1"></div>
