@@ -2,6 +2,7 @@ import { useState,useEffect } from 'react'
 import { getProductByID } from '../asyncmock'
 import ItemDetail from './ItemDetail'
 import {useParams} from 'react-router-dom'
+
 const ItemDetailContainer = () =>{
     const[product,setProduct] = useState()
     const {productId} = useParams()
@@ -9,7 +10,7 @@ const ItemDetailContainer = () =>{
         getProductByID(parseInt(productId)).then(response=>{
             setProduct(response)
         })
-    },[])
+    },[productId])
     console.log(product)
     return  (
         <>

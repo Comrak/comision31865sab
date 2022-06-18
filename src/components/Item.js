@@ -3,6 +3,7 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import {Button} from 'react-bootstrap'
 import Card from "react-bootstrap/Card";
 import {Link} from 'react-router-dom'
+import { Context } from '../App'
 
 const Item = ({name, img,price,id}) =>{
     return(
