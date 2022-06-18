@@ -14,12 +14,12 @@ const ItemDetail = ({id, name, img, category, description, price, stock,ingredie
         addItem({ id, name, price, quantity})
         setQuantityAdded(quantity)
     }
-    console.log(ingredients)
-    let displayIng = ''
-    ingredients.forEach((ing)=>{
-        displayIng +=` ${ing}`
-    })
-    console.log(displayIng)
+    // console.log(ingredients)
+    // let displayIng = ''
+    // ingredients.forEach((ing)=>{
+    //     displayIng +=` ${ing}`
+    // })
+    //  console.log(displayIng)
     return(
         <div style={{
             display: 'flex',
@@ -45,12 +45,12 @@ const ItemDetail = ({id, name, img, category, description, price, stock,ingredie
                 <p>
                     Precio: {price}
                 </p>
-                <p>
+                {/* <p>
                     ingredientes:
                     <ul>
                         {displayIng}
                     </ul>
-                </p>
+                </p> */}
             </section>           
             <footer>
                 { quantityAdded === 0 
